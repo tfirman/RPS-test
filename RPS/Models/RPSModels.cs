@@ -9,8 +9,13 @@ namespace RockPaperScissors.Models
   {
     public string GameResult (int Player1, int Player2)
       {
-          string output = "Player 2";
-          return output;
+          if (Player1 == Player2)
+          {
+              return "Draw";
+          } else
+          {
+              return "Player 2";
+          }
       }
   }
 }
