@@ -12,9 +12,12 @@ namespace RockPaperScissors.Models
           if (Player1 == Player2)
           {
               return "Draw";
-          } else
+          } else if ((Player1 + 1) % 3 == Player2 % 3)
           {
               return "Player 2";
+          } else
+          {
+            return "Player 1";
           }
       }
   }
